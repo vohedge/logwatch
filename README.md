@@ -46,7 +46,7 @@ Attributes
     <td><tt>[:logwatch][:detail]</tt></td>
     <td>String</td>
     <td>The default detail level for the report(Low,Mid,High)</td>
-    <td><tt>yestarday</tt></td>
+    <td><tt>Low</tt></td>
   </tr>
   <tr>
     <td><tt>[:logwatch][:services]</tt></td>
