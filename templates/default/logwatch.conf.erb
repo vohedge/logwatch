@@ -1,0 +1,31 @@
+# Default Log Directory
+LogDir = /var/log
+
+# You can override the default temp directory (/tmp) here
+TmpDir = /var/cache/logwatch
+
+# Output/Format Options
+Output = <%= @output %>
+Format = <%= @format %>
+Encode = none
+
+# Output - Mail
+MailTo   = <%= @mail_to %>
+MailFrom = Logwatch
+mailer   = "/usr/sbin/sendmail -t"
+
+# Output - File
+# Filename = /tmp/logwatch
+# Archives = No
+
+# The default time range for the report...
+Range = <%= @range %>
+
+# The default detail level for the report.
+Detail = <%= @detail %>
+
+# Services
+<% @services.each do |service| %>
+  Service = <%= service %>
+<% end %>
+

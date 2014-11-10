@@ -1,0 +1,23 @@
+### ChefCookbook ###
+.vagrant
+/cookbooks
+
+# Bundler
+bin/*
+.bundle/*
+
+# test-kitchen
+.kitchen/
+.kitchen.local.yml
+
+# berkshelf
+Berksfile.lock
+
+### vim ###
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
